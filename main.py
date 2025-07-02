@@ -8,7 +8,7 @@ model = YOLO("best.pt")
 
 @app.get("/")
 def root():
-    return {"message": "API YOLO ativa. Envie uma imagem para /predict/ via POST."}
+    return {"message": "API YOLO ativa. Envie uma imagem para /predict/ via POST, testeeee."}
 
 @app.post("/predict/")
 async def predict(file: UploadFile = File(...)):
