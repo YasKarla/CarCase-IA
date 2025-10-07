@@ -14,20 +14,15 @@ A solução foi construída em três camadas principais:
 
 Modelo de IA (YOLOv8):
 
-Responsável por detectar e classificar o modelo do carro na imagem capturada pela câmera.
-
-Treinado com imagens rotuladas de diversos modelos automotivos.
-
-Exportado em formato .pt para uso em inferência remota.
+- Responsável por detectar e classificar o modelo do carro na imagem capturada pela câmera.
+- Treinado com imagens rotuladas de diversos modelos automotivos.
+- Exportado em formato .pt para uso em inferência remota.
 
 API de Inferência:
-
-Desenvolvida em Python, utilizando FastAPI.
-
-Realiza a inferência do modelo YOLOv8 e retorna o nome do carro detectado.
+- Desenvolvida em Python, utilizando FastAPI.
+- Realiza a inferência do modelo YOLOv8 e retorna o nome do carro detectado.
 
 A partir do resultado, busca automaticamente no CSV extraído do cars_meta.mat os dados técnicos correspondentes.
-
 Resposta JSON contém:
 {
   "modelo_detectado": "Lamborghini_Diablo_Coupe_2001",
